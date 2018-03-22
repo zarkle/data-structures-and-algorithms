@@ -9,4 +9,5 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
 1. Data Structures
     - [List](./data_structures/list)
 2. Algorithms
-    - [Shift Array](./challenges/shift-array)
+    - [Shift Array](./challenges/shift_array)
+    - [Binary Search](./challenges/binary_search)
