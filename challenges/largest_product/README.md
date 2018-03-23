@@ -1,4 +1,4 @@
-# largest-product-array
+# Largest product of 2 adjacent values in a 2D array
 CF 401 Data Structures Whiteboard Challenge
 
 ## Challenge
