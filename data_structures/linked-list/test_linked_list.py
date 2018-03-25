@@ -54,7 +54,7 @@ def test_length(small_ll):
     assert len(small_ll) == 4
 
 
-def check_valid_iterable():
+def test_check_valid_iterable():
     """check if iterable valid"""
     with pytest.raises(TypeError) as err:
         LL(2)
