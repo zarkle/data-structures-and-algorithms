@@ -18,6 +18,17 @@ def test_insert_first_node(empty_ll):
     assert empty_ll.head.val == 2
 
 
+def test_insert_two_nodes(empty_ll):
+    """test to insert two nodes, new node is inserted at head"""
+    empty_ll.insert(2)
+    empty_ll.insert(1)
+    assert empty_ll.head.val == 1
+
+
+def test_insert_iterable():
+    assert LL([1, 2, 3, 4])._size == 4
+
+
 def test_find_none(empty_ll):
     """test to search an empty list"""
     assert empty_ll.find(1) is False
