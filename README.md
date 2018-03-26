@@ -7,7 +7,9 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
 
 ## Table of Contents
 1. Data Structures
-    - [List](./data_structures/list)
+    - [Single Linked List](./data_structures/linked-list)
 2. Algorithms
-    - [Shift Array](./challenges/shift_array)
-    - [Binary Search](./challenges/binary_search)
+    - [Reverse An Array](./challenges/reverse-an-array)
+    - [Shift Array](./challenges/shift-array)
+    - [Binary Search](./challenges/binary-search)
+    - [Largest Product](./challenges/largest-product)
