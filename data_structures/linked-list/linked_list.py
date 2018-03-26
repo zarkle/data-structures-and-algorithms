@@ -8,7 +8,7 @@ class LinkedList:
 
     def __init__(self, iterable=[]):
         """Constructor for the LinkedList object"""
-        self._current = None
+        # self._current = None
         self.head = None
         self._size = 0
         if type(iterable) is not list:
@@ -33,10 +33,10 @@ class LinkedList:
 
     def find(self, val):
         """Find an item in the linked list"""
-        self._current = self.head
-        while self._current:
-            if self._current.val == val:
+        current = self.head
+        while current:
+            if current.val == val:
                 return True
-            self._current = self._current._next
-        else:
-            return False
+            current = current._next
+
+        return False
