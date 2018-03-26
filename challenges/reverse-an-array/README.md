@@ -5,7 +5,7 @@ CF 401 Data Structures Whiteboard Challenge
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return the provided array argument with elements in reversed order. Write at least three test assertions for each method that you define.
 
 ## Solution
-![whiteboard](../../assets/reverse-array.jpg)
+![whiteboard](../../assets/reverse_array.jpg)
 
 
 <!-- Original Instructions:
