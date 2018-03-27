@@ -8,7 +8,6 @@ class LinkedList:
 
     def __init__(self, iterable=[]):
         """Constructor for the LinkedList object"""
-        # self._current = None
         self.head = None
         self._size = 0
         if type(iterable) is not list:
