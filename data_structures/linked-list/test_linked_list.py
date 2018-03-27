@@ -54,12 +54,27 @@ def test_check_valid_iterable():
 
 
 def test_append_to_end_empty(empty_ll):
+    """test if appends to empty list"""
     empty_ll.append(2)
     assert empty_ll.head.val == 2
 
 
 def test_append_to_end(small_ll):
+    """test if appends to end of list"""
     small_ll.append(5)
     assert len(small_ll) == 5
+    assert small_ll.head._next._next._next._next.val == 5
 
 
+def test_insert_after(small_ll):
+    """test if inserts after value"""
+    small_ll.insert_after(2, 8)
+    assert len(small_ll) == 5
+    assert small_ll.head._next._next._next.val == 8
+
+
+def test_insert_after_end(small_ll):
+    """test if inserts after value"""
+    small_ll.insert_after(1, 9)
+    assert len(small_ll) == 5
+    assert small_ll.head._next._next._next._next.val == 9

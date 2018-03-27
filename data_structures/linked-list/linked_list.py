@@ -11,7 +11,6 @@ class LinkedList:
         # self._current = None
         self.head = None
         self._size = 0
-        self._position = None
         if type(iterable) is not list:
             raise TypeError('Invalid iterable')
         for item in iterable:
@@ -46,16 +45,38 @@ class LinkedList:
         """Append an item to the end of the linked list"""
         if self.head is None:
             self.insert(val)
+        else:
+            current = self.head
+            while current:
+                if current._next is None:
+                    current._next = Node(val)
+                    self._size += 1
+                    break
+                current = current._next
 
+    # def insert_before(self, val, newVal):
+    #     """
+    #     Add a new node with the given newValue immediately before the first value node
+    #     """
+    #     current = self.head
+    #     while current:
+    #         previous = current
+    #         if current.val == val:
+    #             position = current._next
+    #             self.insert(newVal)
+    #             break
+    #         current = current._next
+
+    def insert_after(self, val, newVal):
+        """
+        Add a new node with the given newValue immediately after the first value node
+        """
         current = self.head
         while current:
-            if current._next is None:
-                current._next = Node(val)
+            if current.val == val:
+                position = current._next
+                current._next = Node(newVal)
+                current._next._next = position
                 self._size += 1
                 break
             current = current._next
-
-    def insertBefore(self, val, newVal):
-        """
-        Add a new node with the given newValue immediately before the first value node
-        """
