@@ -16,3 +16,17 @@ Define a method called find which takes any value as an argument and returns Tru
 At no time should an exception or stack trace be show to the end user. Catch and handle any such exceptions and return a printed value or operation which cleanly represents the state and either Stops execution cleanly or provides the user with clear direction and output.
 
 Every bit of functionality that you have should be tested and documented.
+
+
+Whiteboard Challenge (Day 6) Insertions:
+Write the following methods for the Linked List class:
+- .append(value) which adds a new node with the given value to the end of the list
+- .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+- .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
+You have access to the Node class and all the properties on the Linked List class.
+
+Write at least three test assertions for each method that you define.
+
+Ensure your tests are passing before you submit your solution.
+![whiteboard](../../assets/ll_insertions.jpg)

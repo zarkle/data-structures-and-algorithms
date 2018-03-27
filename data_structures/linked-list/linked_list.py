@@ -8,7 +8,6 @@ class LinkedList:
 
     def __init__(self, iterable=[]):
         """Constructor for the LinkedList object"""
-        # self._current = None
         self.head = None
         self._size = 0
         if type(iterable) is not list:
@@ -40,3 +39,49 @@ class LinkedList:
             current = current._next
 
         return False
+
+    def append(self, val):
+        """Append an item to the end of the linked list"""
+        if self.head is None:
+            self.insert(val)
+        else:
+            current = self.head
+            while current:
+                if current._next is None:
+                    current._next = Node(val)
+                    self._size += 1
+                    break
+                current = current._next
+
+    def insert_before(self, val, newVal):
+        """
+        Add a new node with the given newValue immediately before the first value node
+        """
+        current = self.head
+        previous = None
+        while current:
+            if current.val == val:
+                if previous is None:
+                    self.insert(newVal)
+                else:
+                    new_node = Node(newVal)
+                    new_node._next = current
+                    previous._next = new_node
+                    self._size += 1
+                break
+            previous = current
+            current = current._next
+
+    def insert_after(self, val, newVal):
+        """
+        Add a new node with the given newValue immediately after the first value node
+        """
+        current = self.head
+        while current:
+            if current.val == val:
+                position = current._next
+                current._next = Node(newVal)
+                current._next._next = position
+                self._size += 1
+                break
+            current = current._next
