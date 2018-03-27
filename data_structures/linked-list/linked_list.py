@@ -11,6 +11,7 @@ class LinkedList:
         # self._current = None
         self.head = None
         self._size = 0
+        self._position = None
         if type(iterable) is not list:
             raise TypeError('Invalid iterable')
         for item in iterable:
@@ -40,3 +41,15 @@ class LinkedList:
             current = current._next
 
         return False
+
+    def append(self, val):
+        """Append an item to the end of the linked list"""
+        current = self.head
+        while current:
+            if current._next is None:
+                current._next = Node(val)
+                self._size += 1
+                break
+            current = current._next
+
+    def
