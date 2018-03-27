@@ -54,18 +54,24 @@ class LinkedList:
                     break
                 current = current._next
 
-    # def insert_before(self, val, newVal):
-    #     """
-    #     Add a new node with the given newValue immediately before the first value node
-    #     """
-    #     current = self.head
-    #     while current:
-    #         previous = current
-    #         if current.val == val:
-    #             position = current._next
-    #             self.insert(newVal)
-    #             break
-    #         current = current._next
+    def insert_before(self, val, newVal):
+        """
+        Add a new node with the given newValue immediately before the first value node
+        """
+        current = self.head
+        previous = None
+        while current:
+            if current.val == val:
+                if previous is None:
+                    self.insert(newVal)
+                else:
+                    new_node = Node(newVal)
+                    new_node._next = current
+                    previous._next = new_node
+                    self._size += 1
+                break
+            previous = current
+            current = current._next
 
     def insert_after(self, val, newVal):
         """
