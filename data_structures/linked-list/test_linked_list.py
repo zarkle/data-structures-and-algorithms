@@ -53,9 +53,9 @@ def test_check_valid_iterable():
     assert str(err.value) == 'Invalid iterable'
 
 
-# def test_append_to_end_empty(empty_ll):
-#     empty_ll.append(2)
-#     assert empty_ll.head.val == 2
+def test_append_to_end_empty(empty_ll):
+    empty_ll.append(2)
+    assert empty_ll.head.val == 2
 
 
 def test_append_to_end(small_ll):

@@ -44,6 +44,9 @@ class LinkedList:
 
     def append(self, val):
         """Append an item to the end of the linked list"""
+        if self.head is None:
+            self.insert(val)
+
         current = self.head
         while current:
             if current._next is None:
@@ -52,4 +55,7 @@ class LinkedList:
                 break
             current = current._next
 
-    def
+    def insertBefore(self, val, newVal):
+        """
+        Add a new node with the given newValue immediately before the first value node
+        """
