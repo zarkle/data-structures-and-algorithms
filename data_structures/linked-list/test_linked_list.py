@@ -80,6 +80,12 @@ def test_insert_after_end(small_ll):
     assert small_ll.head._next._next._next._next.val == 9
 
 
+def test_insert_after_invalid(small_ll):
+    """test if inserts after value"""
+    small_ll.insert_after(6, 9)
+    assert len(small_ll) == 4
+
+
 def test_insert_before(small_ll):
     """test if inserts before value"""
     small_ll.insert_before(3, 6)
@@ -92,3 +98,9 @@ def test_insert_before_head(small_ll):
     small_ll.insert_before(4, 7)
     assert len(small_ll) == 5
     assert small_ll.head.val == 7
+
+
+def test_insert_before_invalid(small_ll):
+    """test if inserts before value"""
+    small_ll.insert_before(6, 7)
+    assert len(small_ll) == 4
