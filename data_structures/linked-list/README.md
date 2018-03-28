@@ -30,3 +30,8 @@ Write at least three test assertions for each method that you define.
 
 Ensure your tests are passing before you submit your solution.
 ![whiteboard](../../assets/ll_insertions.jpg)
+
+
+Whiteboard Challenge (Day 7)  k-th value from the end of a linked list:
+Write a method for the Linked List class called kthFromEnd which takes a number, k, as an argument. Return the node that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges. Write at least three test assertions for each method that you define. ​ Ensure your tests are passing before you submit your solution. ​
+![whiteboard](../../assets/ll-kth-from-end.jpg)
