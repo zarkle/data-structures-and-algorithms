@@ -124,5 +124,7 @@ def test_kth_from_end_exception(small_ll):
         small_ll.kth_from_end(6)
         small_ll.kth_from_end(-1)
 
+
+def test_kth_from_end_invalid_type(small_ll):
     with pytest.raises(TypeError):
         small_ll.kth_from_end('a')

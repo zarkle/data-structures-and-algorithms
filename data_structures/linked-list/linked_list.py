@@ -90,6 +90,7 @@ class LinkedList:
         """Return the node that is k from the end of the linked list."""
         if len(self) - k < 0:
             raise AttributeError
+
         current = self.head
         for i in range(len(self) - k - 1):
             current = current._next
