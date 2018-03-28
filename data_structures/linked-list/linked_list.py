@@ -85,3 +85,23 @@ class LinkedList:
                 self._size += 1
                 break
             current = current._next
+
+    def kth_from_end(self, k):
+        """Return the node that is k from the end of the linked list."""
+        if len(self) - k < 0:
+            raise AttributeError
+
+        current = self.head
+        for i in range(len(self) - k - 1):
+            current = current._next
+        return current.val
+
+
+        # current = self.head
+        # counter = self._size - 1 - k
+        # if (counter < 0) | (counter >= self._size):
+        #     raise ValueError
+        # while counter > 0:
+        #     current = current._next
+        #     counter -= 1
+        # return current.val

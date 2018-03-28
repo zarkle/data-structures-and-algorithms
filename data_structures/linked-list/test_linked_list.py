@@ -104,3 +104,27 @@ def test_insert_before_invalid(small_ll):
     """test if inserts before value"""
     small_ll.insert_before(6, 7)
     assert len(small_ll) == 4
+
+
+def test_kth_from_end_last(small_ll):
+    """test if inserted k from end of list"""
+    small_ll.kth_from_end(0)
+    assert small_ll.head._next._next._next.val == 1
+
+
+def test_kth_from_end_second(small_ll):
+    """test if inserted k from end of list"""
+    small_ll.kth_from_end(2)
+    assert small_ll.head._next.val == 3
+
+
+def test_kth_from_end_exception(small_ll):
+    """test if inserted k from end of list"""
+    with pytest.raises(AttributeError):
+        small_ll.kth_from_end(6)
+        small_ll.kth_from_end(-1)
+
+
+def test_kth_from_end_invalid_type(small_ll):
+    with pytest.raises(TypeError):
+        small_ll.kth_from_end('a')
