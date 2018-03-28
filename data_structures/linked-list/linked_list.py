@@ -95,13 +95,3 @@ class LinkedList:
         for i in range(len(self) - k - 1):
             current = current._next
         return current.val
-
-
-        # current = self.head
-        # counter = self._size - 1 - k
-        # if (counter < 0) | (counter >= self._size):
-        #     raise ValueError
-        # while counter > 0:
-        #     current = current._next
-        #     counter -= 1
-        # return current.val
