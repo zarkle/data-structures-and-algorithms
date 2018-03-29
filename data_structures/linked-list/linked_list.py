@@ -100,10 +100,10 @@ class LinkedList:
         """
         Return a boolean that indicates whether or not a circular reference or loop is present in the linked list.
         """
-        current = self.head
-        for i in range(self._size - 1):
-            current = current._next
-        if current._next is None:
-            return False
-        else:
-            return True
+        a = b = self.head
+        while a and b and b._next:
+            a = a._next
+            b = b._next._next
+            if a is b:
+                return True
+        return False

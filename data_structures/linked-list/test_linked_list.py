@@ -138,12 +138,12 @@ def test_has_loop_false(small_ll):
 
 
 def test_has_loop_true(small_ll):
-    """test if linked list is loop"""
+    """test if linked list is loop when loops to head"""
     small_ll.head._next._next._next = small_ll.head
     assert small_ll.has_loop() is True
 
 
 def test_has_loop_true_longer_and_not_head(long_ll):
-    """test if linked list is loop"""
+    """test if linked list is loop when loops to second node"""
     long_ll.head._next._next._next = long_ll.head._next
     assert long_ll.has_loop() is True
