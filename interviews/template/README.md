@@ -1,9 +1,16 @@
 # NAME
 CF 401 Data Structures Whiteboard Challenge
+
 Mock Interviews
 
 ## Challenge
 
 
-## Solution
+## Whiteboard
 ![whiteboard](../../assets/name.jpg)
+
+### Original Instructions
+[]()
+
+### Kata
+[]()
