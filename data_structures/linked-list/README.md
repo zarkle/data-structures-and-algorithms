@@ -29,7 +29,11 @@ Write a method for the Linked List class called kthFromEnd which takes a number,
 ![whiteboard](../../assets/ll-kth-from-end.jpg)
 
 
-
 #### Whiteboard Challenge (Day 8)  Merge two linked lists:
 Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the single list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges. Write at least three test assertions for each method that you define. Ensure your tests are passing before you submit your solution.
 ![whiteboard](../../assets/ll_merge.jpg)
+
+
+#### Whiteboard Challenge (Day 9)  Identify a circular reference in a linked list:
+Write a method for the Linked List class called hasLoop which takes no arguments. Return a boolean that indicates whether or not a circular reference or loop is present in the linked list. Your implementation must not use any additional memory or modify the nodes of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges. Write at least three test assertions for each method that you define. Ensure your tests are passing before you submit your solution.
+![whiteboard](../../assets/ll_find_loop.jpg)

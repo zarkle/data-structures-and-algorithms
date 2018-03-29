@@ -95,3 +95,15 @@ class LinkedList:
         for i in range(len(self) - k - 1):
             current = current._next
         return current.val
+
+    def has_loop(self):
+        """
+        Return a boolean that indicates whether or not a circular reference or loop is present in the linked list.
+        """
+        current = self.head
+        for i in range(self._size - 1):
+            current = current._next
+        if current._next is None:
+            return False
+        else:
+            return True

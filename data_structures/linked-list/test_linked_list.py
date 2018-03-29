@@ -130,3 +130,20 @@ def test_kth_from_end_invalid_type(small_ll):
     """test with invalid input"""
     with pytest.raises(TypeError):
         small_ll.kth_from_end('a')
+
+
+def test_has_loop_false(small_ll):
+    """test if linked list is loop"""
+    assert small_ll.has_loop() is False
+
+
+def test_has_loop_true(small_ll):
+    """test if linked list is loop"""
+    small_ll.head._next._next._next = small_ll.head
+    assert small_ll.has_loop() is True
+
+
+def test_has_loop_true_longer_and_not_head(long_ll):
+    """test if linked list is loop"""
+    long_ll.head._next._next._next = long_ll.head._next
+    assert long_ll.has_loop() is True
