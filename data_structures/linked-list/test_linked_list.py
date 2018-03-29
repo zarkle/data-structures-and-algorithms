@@ -17,6 +17,7 @@ def test_insert_two_nodes(empty_ll):
 
 
 def test_insert_iterable():
+    """test inserting iterable into linked list"""
     assert LL([1, 2, 3, 4])._size == 4
 
 
@@ -119,12 +120,13 @@ def test_kth_from_end_second(small_ll):
 
 
 def test_kth_from_end_exception(small_ll):
-    """test if inserted k from end of list"""
+    """test for errors"""
     with pytest.raises(AttributeError):
         small_ll.kth_from_end(6)
         small_ll.kth_from_end(-1)
 
 
 def test_kth_from_end_invalid_type(small_ll):
+    """test with invalid input"""
     with pytest.raises(TypeError):
         small_ll.kth_from_end('a')
