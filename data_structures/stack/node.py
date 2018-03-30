@@ -10,4 +10,4 @@ class Node:
         return '{val}'.format(val=self.val)
 
     def __str__(self):
-        return self.__repr__
+        return '{val}'.format(val=self.val)
