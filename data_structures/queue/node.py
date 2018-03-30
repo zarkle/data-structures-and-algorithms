@@ -5,6 +5,8 @@ class Node:
         """Constructor for the Node object"""
         self.val = val
         self._next = next
+        if val is None:
+            raise TypeError('Must pass a value')
 
     def __repr__(self):
         return '{val}'.format(val=self.val)
