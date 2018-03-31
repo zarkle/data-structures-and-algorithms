@@ -12,7 +12,7 @@ A singley linked list is beneficial when creating a to do list. You can remove t
 
 #### Constructor:
 ```python
-l = LinkedList(iterable='list')
+l = LinkedList(iterable=[])
 ```
 #### Implements the following methods:
 - **insert(val):** Add another node to the front of the list.
@@ -40,7 +40,7 @@ Structure for values in a stack where the first item in is the last item out (FI
 
 #### Constructor:
 ```python
-s = Stack(iterable='list')
+s = Stack(iterable=[])
 ```
 #### Implements the following methods:
 - **len():** Get the size of the stack.
@@ -83,7 +83,7 @@ Structure for values in a queue where the first item in is the first out (FIFO).
 
 #### Constructor:
 ```python
-q = Queue(iterable='list')
+q = Queue(iterable=[])
 ```
 #### Implements the following methods:
 - **len():** Get the size of the queue.
