@@ -24,6 +24,6 @@ def short_stack():
 def tall_stack():
     """Create a tall stack"""
     s = Stack()
-    for num in range(10):
+    for num in range(1, 11):
         s.push(num)
     return s

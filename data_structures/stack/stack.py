@@ -9,13 +9,36 @@ class Stack:
         if type(iterable) is not list:
             raise TypeError('Invalid iterable')
         for item in iterable:
-            self.insert(item)
+            self.push(item)
 
     def __repr__(self):
-        pass
+        return f'Top of stack is {self.top.val}'
 
     def __str__(self):
-        pass
+        return f'Top of stack is {self.top.val}'
 
     def __len__(self):
-        pass
+        """Return the size of the stack"""
+        return self._size
+
+    def push(self, val):
+        """Insert a node to top of stack"""
+        try:
+            node = Node(val, self.top)
+        except TypeError:
+            return self.top
+        self.top = node
+        self._size += 1
+        return self.top
+
+    def pop(self):
+        """Remove the top node from stack"""
+        removed_node = self.top
+        self.top = self.top._next
+        self._size -= 1
+        return removed_node.val
+
+    def peek(self):
+        """Take a peek at the top node"""
+        return self.top.val
+
