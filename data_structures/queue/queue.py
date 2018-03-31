@@ -24,21 +24,20 @@ class Queue:
     def enqueue(self, val):
         """Insert a node to back of queue"""
         try:
-            node = Node(val, self.back)
+            node = Node(val)
         except TypeError:
             return self.back
         self._size += 1
         if self.front is None:
             self.front = node
             self.back = node
-            return self.front
-        self.back._previous = node
+        self.back._next = node
         self.back = node
         return self.front
 
     def dequeue(self):
         """Remove the node at front of queue"""
         removed_node = self.front
-        # self.front = self.back._next
+        self.front = self.front._next
         self._size -= 1
-        return removed_node
+        return removed_node.val
