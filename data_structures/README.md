@@ -43,6 +43,8 @@ Structure for values in a stack where the first item in is the last item out (FI
 s = Stack(iterable='list')
 ```
 #### Implements the following methods:
+- **len():** Get the size of the stack.
+    - Time complexity: O(1)
 - **push(val):** Add another value to the top of the stack. Return the new top value.
     - Time complexity: O(1)
 - **pop():** Remove the top node and return it's value. <!-- Raises an IndexError if there are no values to return. -->
