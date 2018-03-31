@@ -17,6 +17,6 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Largest Product](./challenges/largest-product)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
-    - [Nth Fibonacci](./interviews/fibonacci-n)]
+    - [Nth Fibonacci](./interviews/fibonacci-n)
     - [Reverse Linked List](./interviews/reverse-LL)
     - [Linked List is Palindrome](./interviews/is_palindrome)
