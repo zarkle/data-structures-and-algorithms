@@ -34,6 +34,13 @@ def test_push_single_node(empty_stack):
     assert len(empty_stack) == 1
 
 
+def test_push_many_node(empty_stack):
+    """Test that a new Stack has a top value of None"""
+    assert empty_stack.push(3).val == 3
+    assert empty_stack.push(12).val == 12
+    assert len(empty_stack) == 2
+
+
 def test_make_valid_stack(short_stack):
     """Test that a new Stack is instantiated correctly"""
     assert short_stack.top.val == 5
