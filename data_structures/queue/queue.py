@@ -9,6 +9,8 @@ class Queue:
         self._size = 0
         if type(iterable) is not list:
             raise TypeError('Invalid iterable')
+        for item in iterable:
+            self.enqueue(item)
 
     def __repr__(self):
         return f'Front of queue is {self.front.val}'
@@ -18,3 +20,25 @@ class Queue:
 
     def __len__(self):
         return self._size
+
+    def enqueue(self, val):
+        """Insert a node to back of queue"""
+        try:
+            node = Node(val, self.back)
+        except TypeError:
+            return self.back
+        self._size += 1
+        if self.front is None:
+            self.front = node
+            self.back = node
+            return self.front
+        self.back._previous = node
+        self.back = node
+        return self.front
+
+    def dequeue(self):
+        """Remove the node at front of queue"""
+        removed_node = self.front
+        # self.front = self.back._next
+        self._size -= 1
+        return removed_node
