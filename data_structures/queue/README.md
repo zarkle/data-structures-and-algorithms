@@ -1,4 +1,4 @@
-#Data Structure
+# Data Structure
 ## Queues
 - Use your Node class from your linked-list data structure
 - Create a Class for a Queue which creates an empty Queue when instantiated

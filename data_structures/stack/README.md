@@ -1,4 +1,4 @@
-#Data Structure
+# Data Structure
 ## Stacks
 - Use your Node class from your linked-list data structure
 - Create a Class for a Stack which creates an empty Stack when instantiated

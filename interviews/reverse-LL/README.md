@@ -17,3 +17,6 @@ This problem can be approached in several ways:
 
 ## Solution
 ![whiteboard](../../assets/reverse_ll.jpg)
+
+## Original Instructions
+https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-10/interview-01.html

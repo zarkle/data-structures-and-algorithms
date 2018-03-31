@@ -19,4 +19,6 @@ Evaluate and compare the Big-O of both solutions:
 https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-05/interview-02.html
 
 ### Katas
-[CodeWars-noJS/Py](https://www.codewars.com/kata/fibonacci) [CodeWars](https://www.codewars.com/kata/fast-fibonacci)
+[CodeWars-noJS/Py](https://www.codewars.com/kata/fibonacci)
+
+[CodeWars](https://www.codewars.com/kata/fast-fibonacci)
