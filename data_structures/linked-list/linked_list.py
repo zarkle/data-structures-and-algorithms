@@ -1,3 +1,4 @@
+"""Also reverse method and is_palindrome method in interview folder"""
 from node import Node
 
 
