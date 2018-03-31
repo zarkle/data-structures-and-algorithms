@@ -147,3 +147,22 @@ def test_has_loop_true_longer_and_not_head(long_ll):
     """test if linked list is loop when loops to second node"""
     long_ll.head._next._next._next = long_ll.head._next
     assert long_ll.has_loop() is True
+
+
+def test_pop(small_ll):
+    """test pop method"""
+    assert small_ll.pop() == 4
+    assert small_ll.head.val == 3
+    assert len(small_ll) == 3
+
+
+def test_remove(small_ll):
+    """test remove method"""
+    small_ll.remove(small_ll.head)
+    assert small_ll.head.val == 3
+    assert len(small_ll) == 3
+
+
+def test_display(small_ll):
+    """test display method"""
+    assert small_ll.display() == [4, 3, 2, 1]

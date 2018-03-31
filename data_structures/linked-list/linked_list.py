@@ -32,7 +32,7 @@ class LinkedList:
         self._size += 1
 
     def find(self, val):
-        """Find an item in the linked list"""
+        """Find the node that has the given value"""
         current = self.head
         while current:
             if current.val == val:
@@ -108,3 +108,38 @@ class LinkedList:
             if a is b:
                 return True
         return False
+
+    def pop(self):
+        """Remove and return the value of the head of the linked list"""
+        if not self.head:
+            raise IndexError('The list is empty')
+        output = self.head.val
+        self.head = self.head._next
+        self._size -= 1
+        return output
+
+    def remove(self, node):
+        """Remove the given node from the linked list"""
+        if self.head is node:
+            self.head = self.head._next
+            self._size -= 1
+            return
+
+        current = self.head
+        while current:
+            if current._next is node:
+                current._next = node._next
+                self._size -= 1
+                return
+            current = current._next
+
+        raise ValueError('Node is not in list.')
+
+    def display(self):
+        """Display linked list as if it were a tuple litearl"""
+        current = self.head
+        output = []
+        while current:
+            output.append(current.val)
+            current = current._next
+        return output
