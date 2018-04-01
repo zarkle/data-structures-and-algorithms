@@ -30,7 +30,7 @@ l = LinkedList(iterable=[])
     - Time complexity: O(1)
 - **remove(node):** Remove the given node from the LinkedList. Raises a ValueError if the node is not in the list.
     - Time complexity: O(n)
-- **display():** Display LinkedList as if it were a tuple literal. Ex: “(12, ‘sam’, 37, ‘tango’)”
+- **display():** Display LinkedList as if it were an array.
     - Time complexity: O(n)
 
 

@@ -136,7 +136,7 @@ class LinkedList:
         raise ValueError('Node is not in list.')
 
     def display(self):
-        """Display linked list as if it were a tuple litearl"""
+        """Display linked list as if it were an array"""
         current = self.head
         output = []
         while current:
