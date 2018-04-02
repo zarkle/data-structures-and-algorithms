@@ -71,3 +71,10 @@ def test_dequeue_long_values(long_queue):
     long_queue.dequeue()
     assert long_queue.front.val == 2
     assert long_queue.back.val == 10
+
+
+def test_dequeue_raise_error(empty_queue):
+    """Test dequeue raises error"""
+    with pytest.raises(IndexError) as err:
+        empty_queue.dequeue()
+    assert str(err.value) == 'List is empty'
