@@ -37,6 +37,8 @@ class Queue:
 
     def dequeue(self):
         """Remove the node at front of queue"""
+        if self._size == 0:
+            raise IndexError('List is empty')
         removed_node = self.front
         self.front = self.front._next
         self._size -= 1
