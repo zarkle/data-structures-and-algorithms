@@ -1,5 +1,6 @@
 from .stack import Stack
 
+
 class Queue:
     """Create a Queue class that has access to 2 Stack instances with push and pop methods"""
     def __init__(self, iterable=[]):
@@ -15,8 +16,8 @@ class Queue:
     def enqueue(self, val):
         """"""
         try:
-            stack_one.push(val)
+            self.stack_one.push(val)
         except TypeError:
-            return self.top
-        # self._size += 1
+            return self.stack_one.top
+        self._size += 1
         return self
