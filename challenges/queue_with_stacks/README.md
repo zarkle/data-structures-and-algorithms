@@ -9,4 +9,4 @@ Implement the following methods for the Queue class:
 You have access to 2 Stack instances with push and pop methods.
 
 ## Solution
-![whiteboard](../../assets/name.jpg)
+![whiteboard](../../assets/queue-with-stacks.jpg)
