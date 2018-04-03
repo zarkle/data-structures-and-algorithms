@@ -16,6 +16,13 @@ def test_enqueue_single(empty_queue):
     assert empty_queue._size == 1
 
 
+def test_enqueue_twice(empty_queue):
+    """Test enqueue twice into an empty queue"""
+    empty_queue.enqueue(20)
+    assert empty_queue.enqueue(21).stack_one.top.val == 21
+    assert empty_queue._size == 2
+
+
 def test_enqueue_not_empty(short_queue):
     """"Test enqueue into a non empty queue"""
     assert short_queue.enqueue(5).stack_one.top.val == 5

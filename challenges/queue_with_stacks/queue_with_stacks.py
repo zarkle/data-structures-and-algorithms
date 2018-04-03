@@ -28,8 +28,7 @@ class Queue:
 
         current1 = self.stack_one.top
         while current1:
-            temp = self.stack_one.pop()
-            self.stack_two.push(temp)
+            self.stack_two.push(self.stack_one.pop())
             current1 = current1._next
 
         removed = self.stack_two.pop()
