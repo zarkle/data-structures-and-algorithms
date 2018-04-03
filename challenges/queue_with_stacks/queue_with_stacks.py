@@ -14,7 +14,7 @@ class Queue:
             self.enqueue(item)
 
     def enqueue(self, val):
-        """"""
+        """Inserts value into the Queue using a first-in, first-out approach"""
         if val is None:
             raise TypeError('Invalid value')
         self.stack_one.push(val)
@@ -22,7 +22,7 @@ class Queue:
         return self
 
     def dequeue(self):
-        """"""
+        """extracts a value from the Queue using a first-in, first-out approach"""
         if len(self.stack_one) == 0:
             raise IndexError('Empty')
 
