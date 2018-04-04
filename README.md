@@ -15,6 +15,8 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Shift Array](./challenges/shift-array)
     - [Binary Search](./challenges/binary-search)
     - [Largest Product](./challenges/largest-product)
+    - [Queue with Stacks](./challenges/queue_with_stacks)
+    - [FIFO Animal Shelter](./challenges/fifo-animal-shelter)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
     - [Nth Fibonacci](./interviews/fibonacci-n)
