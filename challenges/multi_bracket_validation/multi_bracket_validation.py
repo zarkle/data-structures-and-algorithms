@@ -44,6 +44,7 @@ class Stack:
 
 
 def multi_bracket_validation(input):
+    """Validate for symantically correct multi-brackets in a string"""
     brackets = Stack()
     for i in input:
         if i == '(' or i == '[' or i == '{{':
@@ -62,23 +63,3 @@ def multi_bracket_validation(input):
     if brackets._size != 0:
         return False
     return True
-
-# def multi_bracket_validation(input):
-#     """function check for matching braces"""
-#     if type(input) is str:
-#         lefty = '({['
-#         righty = ')}]'
-#         tocheck = Stack()
-
-#         for item in input:
-#             if item in lefty:
-#                 tocheck.push(item)
-#             elif item in righty:
-#                 if tocheck.top is None:
-#                     return False
-#                 if righty.index(item) != lefty.index(tocheck.pop()):
-#                     return False
-#         return tocheck.top is None
-
-#     else:
-#         return False
