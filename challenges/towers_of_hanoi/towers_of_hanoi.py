@@ -57,9 +57,9 @@ def towers_of_hanoi(n):
         if i % 3 == 0:
             b.append(c.pop())
     if n % 2 == 0:
-        return count
+        return (count, b)
     if n % 2 == 1:
-        return count
+        return (count, c)
 
 
 
@@ -72,3 +72,7 @@ def towers_of_hanoi(n):
 # def moveDisk(fp,tp):
 #     print("moving disk from",fp,"to",tp)
 
+https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/
+https://www.geeksforgeeks.org/iterative-tower-of-hanoi/
+http://interactivepython.org/runestone/static/pythonds/Recursion/TowerofHanoi.html
+https://www.cs.cmu.edu/~cburch/survey/recurse/hanoiimpl.html
