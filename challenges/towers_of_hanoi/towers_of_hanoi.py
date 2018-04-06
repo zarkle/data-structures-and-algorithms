@@ -1,4 +1,10 @@
 def towers_of_hanoi(n):
+    """
+    Towers of Hanoi function setup
+    Puts all disks on tower 'a' (which is a list) to begin with, with the smallest disk (1) on top (which is at the end of the list)
+    Returns the number of steps needed to complete the game and the values for
+    Towers 'c', 'b', and 'a'
+    """
     a = []
     b = []
     c = []
@@ -9,6 +15,7 @@ def towers_of_hanoi(n):
 
 
 def recur(n, a, c, b):
+    """recursion helper function"""
     count = 0
     if n >= 1:
         first = recur(n - 1, a, b, c)
