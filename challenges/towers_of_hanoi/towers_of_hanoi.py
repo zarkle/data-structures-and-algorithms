@@ -5,7 +5,7 @@ def towers_of_hanoi(n):
     for i in reversed(range(1, n + 1)):
         a.append(i)
     count = recur(n, a, c, b)
-    return (count, c)
+    return (count, c, b, a)
 
 
 def recur(n, a, c, b):
