@@ -44,3 +44,8 @@ def test_multi_bracket_validation_three_false():
 def test_multi_bracket_validation_three_round_false():
     """Test for multi-bracket validity"""
     assert multi_bracket_validation('((abc)))') is False
+
+
+def test_multi_bracket_validation_three_round_james1():
+    """Test for multi-bracket validity"""
+    assert multi_bracket_validation('{{abc') is False

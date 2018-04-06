@@ -47,19 +47,20 @@ def multi_bracket_validation(input):
     """Validate for symantically correct multi-brackets in a string"""
     brackets = Stack()
     for i in input:
-        if i == '(' or i == '[' or i == '{{':
+        if i == '(' or i == '[' or i == '{':
             brackets.push(i)
-        elif i == ')' or i == ']' or i == '}}':
+        elif i == ')' or i == ']' or i == '}':
             if brackets._size == 0:
                 return False
             elif i == ')' and brackets.top.val == '(':
                 brackets.pop()
             elif i == ']' and brackets.top.val == '[':
                 brackets.pop()
-            elif i == '}}' and brackets.top.val == '{{':
+            elif i == '}' and brackets.top.val == '{':
                 brackets.pop()
             else:
                 return False
+
     if brackets._size != 0:
         return False
     return True
