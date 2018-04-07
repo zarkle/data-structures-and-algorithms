@@ -44,7 +44,7 @@ class BST:
         _walk(self.root)
 
     def pre_order(self, operation):
-        """insert in order"""
+        """insert in pre-order"""
         def _walk(node=None):
             if node is None:
                 return
@@ -60,7 +60,7 @@ class BST:
         _walk(self.root)
 
     def post_order(self, operation):
-        """insert in order"""
+        """insert in post-order"""
         def _walk(node=None):
             if node is None:
                 return
@@ -76,7 +76,7 @@ class BST:
         _walk(self.root)
 
     def insert(self, val):
-        """insert into BST"""
+        """insert node into BST"""
         node = Node(val)
         current = self.root
 
