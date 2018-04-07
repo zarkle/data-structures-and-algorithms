@@ -11,3 +11,7 @@ This problem can be solved using different approaches:
     - Using a helper data structure (Array or Linked List) to keep track of the nodes.
         - This method takes O(n) and uses O(n) extra space.
     - Reversing the Linked List, and checking for equality of the reversed part.
+
+
+## Original Instructions
+https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-10/interview-02.html
