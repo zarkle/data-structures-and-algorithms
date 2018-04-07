@@ -10,6 +10,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Singly Linked List](./data_structures/linked-list)
     - [Stack](./data_structures/stack)
     - [Queue](./data_structures/queue)
+    - [BST](./data_structures/binary_search_tree)
 2. Algorithms
     - [Reverse An Array](./challenges/reverse-an-array)
     - [Shift Array](./challenges/shift-array)
@@ -24,3 +25,5 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Nth Fibonacci](./interviews/fibonacci-n)
     - [Reverse Linked List](./interviews/reverse-LL)
     - [Linked List is Palindrome](./interviews/is_palindrome)
+    - [Max Stack](./interviews/max-stack)
+    - [Eeny Meeny](./interviews/eeny-meeny)
