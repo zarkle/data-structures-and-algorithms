@@ -5,10 +5,10 @@ class Node:
         self.left = None
         self.right = None
 
-    def __repr__(self):
+    def __repr__(self):  # pragma: no cover
         return 'Node Val: {}'.format(self.val)
 
-    def __str__(self):
+    def __str__(self):  # pragma: no cover
         return self.val
 
 
@@ -21,10 +21,10 @@ class BST:
         for item in iterable:
             self.insert(item)
 
-    def __repr__(self):
+    def __repr__(self):  # pragma: no cover
         return '<BST Root {}>'.format(self.root.val)
 
-    def __str__(self):
+    def __str__(self):  # pragma: no cover
         return self.root.val
 
     def in_order(self, operation):
