@@ -1,5 +1,12 @@
-from .bst import BST
+from .bst import BST, Node
 import pytest
+
+
+def test_create_node():
+    """test a node is created"""
+    node = Node(5)
+    assert node.left is None
+    assert node.right is None
 
 
 def test_bst_created_with_iterable():
@@ -150,3 +157,21 @@ def test_post_order_operation_left_heavy(left_heavy):
     order = []
     left_heavy.post_order(lambda n: order.append(n.val))
     assert order == [4, 6, 8, 10]
+
+
+def test_walk_none_node_in_order():
+    """test walk with empty node"""
+    empty_bst = BST()
+    assert empty_bst.in_order(lambda n: print(n)) is None
+
+
+def test_walk_none_node_pre_order():
+    """test walk with empty node"""
+    empty_bst = BST()
+    assert empty_bst.pre_order(lambda n: print(n)) is None
+
+
+def test_walk_none_node_post_order():
+    """test walk with empty node"""
+    empty_bst = BST()
+    assert empty_bst.post_order(lambda n: print(n)) is None
