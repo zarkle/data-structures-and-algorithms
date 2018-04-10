@@ -21,6 +21,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Multi-Bracket Validation](./challenges/multi_bracket_validation)
     - [Towers of Hanoi](./challenges/towers_of_hanoi)
     - [Fizz Buzz Tree](./challenges/fizzbuzz-tree)
+    - [Breadth-first Traversal](./challenges/breadth-first-traversal)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
     - [Nth Fibonacci](./interviews/fibonacci-n)
