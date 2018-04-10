@@ -31,6 +31,7 @@ class Queue:
         if self.front is None:
             self.front = node
             self.back = node
+            return self.front
         self.back._next = node
         self.back = node
         return self.front

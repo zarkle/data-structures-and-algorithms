@@ -73,6 +73,14 @@ def test_dequeue_long_values(long_queue):
     assert long_queue.back.val == 10
 
 
+def test_dequeue_twice_long_values(long_queue):
+    """Test dequeue removes node from front"""
+    long_queue.dequeue()
+    long_queue.dequeue()
+    assert long_queue.front.val == 3
+    assert long_queue.back.val == 10
+
+
 def test_dequeue_raise_error(empty_queue):
     """Test dequeue raises error"""
     with pytest.raises(IndexError) as err:
