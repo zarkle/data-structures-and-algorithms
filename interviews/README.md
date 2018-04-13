@@ -5,4 +5,6 @@
 3. [Reverse a Linked List](./reverse-LL)
 4. [Is Palindrome](./is_palindrome/)
 5. [Max stack](./max-stack)
-6. [Eeney Meeney Miney Moe](./eeny-meany)
+6. [Eeney Meeney Miney Moe](./eenmy-meany)
+6. [BST Nearest Value](./BST-nearest-val)
+6. [Compare Trees](./compare-trees)
