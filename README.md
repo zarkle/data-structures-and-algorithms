@@ -29,6 +29,6 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Reverse Linked List](./interviews/reverse-LL)
     - [Linked List is Palindrome](./interviews/is_palindrome)
     - [Max Stack](./interviews/max-stack)
-    - [Eeny Meeny](./interviews/eeny-meeny)
+    - [Eeny Meeny](./interviews/eenmy-meany)
     - [BST Nearest Value](./interviews/BST-nearest-val)
     - [Compare Trees](./interviews/compare-trees)
