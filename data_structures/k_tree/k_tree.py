@@ -1,82 +1,77 @@
+from queue import Queue
+
+
 class Node:
-    """create a Node"""
+    """create a Node for a K-ary tree"""
     def __init__(self, val):
         self.val = val
-        self.left = None
-        self.right = None
+        self.children = []
 
     def __repr__(self):  # pragma: no cover
         return 'Node Val: {}'.format(self.val)
 
     def __str__(self):  # pragma: no cover
-        return self.val
+        return f'Node value is {self.val}'
 
 
-class BST:
-    """create a binary search tree data structure"""
-    def __init__(self, iterable=[]):
+class KTree:
+    """create a K-ary tree data structure"""
+    def __init__(self):
         self.root = None
-        if type(iterable) is not list:
-            raise TypeError
-        for item in iterable:
-            self.insert(item)
+        # if type(iterable) is not list:
+        #     raise TypeError
+        # for item in iterable:
+        #     self.insert(item)
 
     def __repr__(self):  # pragma: no cover
-        return '<BST Root {}>'.format(self.root.val)
+        return '<Tree Root {}>'.format(self.root.val)
 
     def __str__(self):  # pragma: no cover
-        return self.root.val
+        return f'Tree root value is {self.root.val}'
 
-    def in_order(self, operation):
-        """insert in order"""
-        def _walk(node=None):
-            if node is None:
-                return
-
-            if node.left is not None:
-                _walk(node.left)
-
-            operation(node)
-
-            if node.right is not None:
-                _walk(node.right)
-
-        _walk(self.root)
-
-    def pre_order(self, operation):
-        """insert in pre-order"""
+    def pre_order_traversal(self, operation):
+        """pre-order traversal of K-ary tree"""
         def _walk(node=None):
             if node is None:
                 return
 
             operation(node)
 
-            if node.left is not None:
-                _walk(node.left)
-
-            if node.right is not None:
-                _walk(node.right)
+            for child in node.children:
+                _walk(child)
 
         _walk(self.root)
 
-    def post_order(self, operation):
-        """insert in post-order"""
+    def post_order_traversal(self, operation):
+        """post-order traversal of K-ary tree"""
         def _walk(node=None):
             if node is None:
                 return
 
-            if node.left is not None:
-                _walk(node.left)
-
-            if node.right is not None:
-                _walk(node.right)
+            for child in node.children:
+                _walk(child)
 
             operation(node)
 
         _walk(self.root)
 
-    def insert(self, val):
-        """insert node into BST"""
+    def breadth_first_traversal(tree):
+        """return breadth-first-traversal of a K-ary tree"""
+        queue = Queue()
+        traverse = []
+
+        queue.enqueue(tree.root)
+        while len(queue) > 0:
+            current = queue.dequeue()
+            traverse.append(current.val)
+            if current.left:
+                queue.enqueue(current.left)
+            if current.right:
+                queue.enqueue(current.right)
+        return traverse
+
+    def insert(self, val, parent):
+        """insert node into K-ary tree at a given parent node"""
         node = Node(val)
         current = self.root
 
@@ -84,18 +79,16 @@ class BST:
             self.root = node
             return node
 
-        while current:
-            if val >= current.val:
-                if current.right is not None:
-                    current = current.right
-                else:
-                    current.right = node
-                    break
-            elif val < current.val:
-                if current.left is not None:
-                    current = current.left
-                else:
-                    current.left = node
-                    break
+        def _walk(current=None):
+            if current.val == parent:
+                current.children.append(node)
+                return node
+            for child in current.children:
+                inserted = _walk(child)
+                if inserted:
+                    return inserted
 
+        node = _walk(self.root)
+        if node is None:
+            raise ValueError('Parent value not found')
         return node
