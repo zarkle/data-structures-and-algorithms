@@ -19,7 +19,7 @@ def print_level_order(tree):
             final += '\n'
 
         current = queue.dequeue()
-        final += str(current.val) + ' '
+        final += f'{current.val} '
         for child in current.children:
             next_queue.enqueue(child)
 
