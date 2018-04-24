@@ -3,7 +3,7 @@ from .queue import Queue
 
 class Node:
     """create a Node for a K-ary tree"""
-    def __init__(self, val):
+    def __init__(self, val=None):
         self.val = val
         self.children = []
 
