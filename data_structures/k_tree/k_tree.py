@@ -18,10 +18,6 @@ class KTree:
     """create a K-ary tree data structure"""
     def __init__(self):
         self.root = None
-        # if type(iterable) is not list:
-        #     raise TypeError
-        # for item in iterable:
-        #     self.insert(item)
 
     def __repr__(self):  # pragma: no cover
         return '<Tree Root {}>'.format(self.root.val)

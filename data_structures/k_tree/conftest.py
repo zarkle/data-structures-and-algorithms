@@ -1,3 +1,4 @@
+from .k_tree import KTree as KT
 import pytest
 
 

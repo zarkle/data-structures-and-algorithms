@@ -39,7 +39,40 @@ def test_insert_raise_error():
         assert err == 'Parent value not found'
 
 
-def test_pre_order(small_tree):
+def test_pre_order_small(small_tree):
     order = []
     small_tree.pre_order_traversal(lambda n: order.append(n.val))
     assert order == [1, 2, 3]
+
+
+def test_pre_order_large(large_tree):
+    order = []
+    large_tree.pre_order_traversal(lambda n: order.append(n.val))
+    assert order == [10, 2, 3, 9, 12, 13]
+
+
+def test_pre_order_single(single_tree):
+    order = []
+    single_tree.pre_order_traversal(lambda n: order.append(n.val))
+    assert order == [1]
+
+
+def test_post_order_small(small_tree):
+    order = []
+    small_tree.post_order_traversal(lambda n: order.append(n.val))
+    assert order == [2, 3, 1]
+
+
+def test_post_order_large(large_tree):
+    order = []
+    large_tree.post_order_traversal(lambda n: order.append(n.val))
+    assert order == [3, 2, 12, 13, 9, 10]
+
+
+def test_post_order_single(single_tree):
+    order = []
+    single_tree.post_order_traversal(lambda n: order.append(n.val))
+    assert order == [1]
+
+
+
