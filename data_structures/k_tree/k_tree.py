@@ -65,13 +65,15 @@ class KTree:
         return traverse
 
     def insert(self, val, parent):
-        """insert node into K-ary tree at a given parent node"""
+        """insert node into K-ary tree at a given parent value"""
         node = Node(val)
         current = self.root
 
-        if self.root is None:
-            self.root = node
-            return node
+        if parent is None:
+            if self.root is None:
+                self.root = node
+                return node
+            raise ValueError('Parent value not found')
 
         def _walk(current=None):
             if current.val == parent:
