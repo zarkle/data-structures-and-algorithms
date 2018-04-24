@@ -1,4 +1,4 @@
-from queue import Queue
+from .queue import Queue
 
 
 class Node:
@@ -51,19 +51,17 @@ class KTree:
 
         _walk(self.root)
 
-    def breadth_first_traversal(tree):
+    def breadth_first_traversal(self):
         """return breadth-first-traversal of a K-ary tree"""
         queue = Queue()
         traverse = []
 
-        queue.enqueue(tree.root)
+        queue.enqueue(self.root)
         while len(queue) > 0:
             current = queue.dequeue()
             traverse.append(current.val)
-            if current.left:
-                queue.enqueue(current.left)
-            if current.right:
-                queue.enqueue(current.right)
+            for child in current.children:
+                queue.enqueue(child)
         return traverse
 
     def insert(self, val, parent):

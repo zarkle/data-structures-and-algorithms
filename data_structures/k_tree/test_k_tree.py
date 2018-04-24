@@ -75,4 +75,14 @@ def test_post_order_single(single_tree):
     assert order == [1]
 
 
+def test_breadth_first_traversal_small(small_tree):
+    assert small_tree.breadth_first_traversal() == [1, 2, 3]
+
+
+def test_breadth_first_traversal_large(large_tree):
+    assert large_tree.breadth_first_traversal() == [10, 2, 9, 3, 12, 13]
+
+
+def test_breadth_first_traversal_single(single_tree):
+    assert single_tree.breadth_first_traversal() == [1]
 
