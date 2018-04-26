@@ -25,6 +25,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Breadth-first Traversal](./challenges/breadth-first-traversal)
     - [Find the Maximum Value in a Binary Tree](./challenges/find-maximum-value-binary-tree)
     - [Print Level Order of K-ary Tree](./challenges/print-level-order)
+    - [Find Matches in K-ary Tree](./challenges/find_matches)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
     - [Nth Fibonacci](./interviews/fibonacci-n)
