@@ -1,7 +1,7 @@
 from .queue import Queue
 
 
-class Node:
+class Node:  #pragma: no cover
     """create a Node for a K-ary tree"""
     def __init__(self, val=None):
         self.val = val
@@ -14,7 +14,7 @@ class Node:
         return f'Node value is {self.val}'
 
 
-class KTree:
+class KTree:  #pragma: no cover
     """create a K-ary tree data structure"""
     def __init__(self):
         self.root = None

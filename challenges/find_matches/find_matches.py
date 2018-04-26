@@ -3,9 +3,12 @@ from .queue import Queue
 
 def find_matches(tree, value=None):
     """
-    insert node into K-ary tree at all instances of given parent value
+    Find all matching values in a tree.
+
+    Input: k-ary tree with non-unique values and a target value
+    Output: collection of all the nodes from within the tree that match the provided value
     """
-    if tree.root is None:
+    if tree is None or tree.root is None:
         raise ValueError('Must provide tree')
 
     if value is None:
