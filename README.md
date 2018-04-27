@@ -35,3 +35,5 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Eeny Meeny](./interviews/eenmy-meany)
     - [BST Nearest Value](./interviews/BST-nearest-val)
     - [Compare Trees](./interviews/compare-trees)
+    - [MV Command](./interviews/mv_command)
+    - [Tree has Leaf Value](./interviews/tree_leaf_value)
