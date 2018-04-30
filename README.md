@@ -12,6 +12,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Queue](./data_structures/queue)
     - [Binary Search Tree](./data_structures/binary_search_tree)
     - [K-ary Tree](./data_structures/k_tree)
+    - [Hash Table](./data_structures/hash_table)
 2. Algorithms
     - [Reverse An Array](./challenges/reverse-an-array)
     - [Shift Array](./challenges/shift-array)
