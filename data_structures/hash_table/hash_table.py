@@ -9,7 +9,7 @@ class HashTable:
     def __init__(self, max_size=1024):
         """Init."""
         self.max_size = max_size
-        self.buckets = [LL()] * self.max_size
+        self.buckets = [LL() for _ in range(self.max_size)]
         if type(max_size) is not int:
             raise TypeError('Max size must be Integer')
 
