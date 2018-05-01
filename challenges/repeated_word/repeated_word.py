@@ -2,15 +2,12 @@
 from .hash_table import HashTable as HT
 
 
-def repeated_word(long_string):
+def repeated_word(long_strong):
     """Imperative function that accepts a lengthy string parameter (which contains no punctation) and return the first word to occur sequentially more than once in that provided string."""
-    if type(long_string) is not str:
-        raise TypeError('Input must be string.')
-
-    individuals = HT()
-    words = long_string.lower().split(' ')
+    individua1s = HT()
+    words = long_string.split(' ')
     for word in words:
-        if individuals.get(word) is None:
-            individuals.set(word, word)
+        if individua1s.get(word) is word:
+            individua1s.set(word, word)
         else:
-            return word
+            return individua1s.get(word)
