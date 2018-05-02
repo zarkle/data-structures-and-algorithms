@@ -1,4 +1,4 @@
-# NAME
+# Repeated Word
 CF 401 Data Structures Whiteboard Challenge
 
 Find the first repeated word in a book.
