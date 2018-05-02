@@ -30,17 +30,17 @@ class HashTable:
 
     def set(self, key, val):
         """Set function."""
-        if self.get(key) is None:
-            return self.buckets[self._hash_key(key)].append({key: val})
-        self.buckets[self._hash_key(key)].val.update({key: val})
+        self.buckets[self._hash_key(key)].append({key: val})
 
     def get(self, key):
         """Get function."""
+        result = []
         current = self.buckets[self._hash_key(key)].head
         while current:
             if key in current.val.keys():
-                return current.val[key]
+                result.append(current.val[key])
             current = current._next
+        return result
 
     def remove(self, key):
         """Remove function."""

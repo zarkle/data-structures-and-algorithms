@@ -93,27 +93,27 @@ def test_hash_table_get():
     """Test hash table get function."""
     hash = HT()
     hash.set('key', 123)
-    assert hash.get('key') == 123
+    assert hash.get('key') == [123]
 
 
 def test_hash_table_get_one():
     """Test hash table get function."""
     hash = HT(1)
     hash.set('abc', 'def')
-    assert hash.get('abc') == 'def'
+    assert hash.get('abc') == ['def']
 
 
 def test_hash_table_get_two():
     """Test hash table get function."""
     hash = HT(2)
     hash.set('key', {'abc': 'def'})
-    assert hash.get('key') == {'abc': 'def'}
+    assert hash.get('key') == [{'abc': 'def'}]
 
 
 def test_hash_table_get_none():
     """Test hash table get function."""
     hash = HT(2)
-    assert hash.get('key') is None
+    assert hash.get('key') == []
 
 
 def test_hash_table_remove_error():
@@ -130,7 +130,7 @@ def test_hash_table_remove():
     hash.set('key', {'abc': 'def'})
     hash.remove('key')
     assert hash.buckets[329].head is None
-    assert hash.get('key') is None
+    assert hash.get('key') == []
 
 
 def test_hash_table_remove_one_bucket():
@@ -139,7 +139,7 @@ def test_hash_table_remove_one_bucket():
     hash.set('key', 123)
     hash.remove('key')
     assert hash.buckets[0].head is None
-    assert hash.get('key') is None
+    assert hash.get('key') == []
 
 
 def test_hash_table_remove_two():
@@ -148,4 +148,12 @@ def test_hash_table_remove_two():
     hash.set('whiskey', 'is cute')
     hash.remove('whiskey')
     assert hash.buckets[0].head is None
-    assert hash.get('whiskey') is None
+    assert hash.get('whiskey') == []
+
+
+def test_hash_table_get_multiples():
+    """Test hash table get function."""
+    hash = HT(1)
+    hash.set('abc', 'def')
+    hash.set('abc', 123)
+    assert hash.get('abc') == ['def', 123]
