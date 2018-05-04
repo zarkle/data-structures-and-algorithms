@@ -1,7 +1,5 @@
-# NAME
+# Find the first repeated word in a book.
 CF 401 Data Structures Whiteboard Challenge
-
-Find the first repeated word in a book.
 
 ## Challenge
 - Write a function that accepts a lengthy string parameter.
