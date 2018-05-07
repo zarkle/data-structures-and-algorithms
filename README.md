@@ -31,6 +31,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Tree Intersection](./challenges/tree_intersection)
     - [Left Join](./challenges/left_join)
     - [Sorting Algorithms](./sorting_algos/)
+        - [Selection Sort](./sorting_algos/insertion.py)
         - [Selection Sort](./sorting_algos/selection.py)
         - [Merge Sort](./challenges/mergesort)
 3. Mock Whiteboard Interviews
