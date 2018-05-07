@@ -1,4 +1,9 @@
-from mergesort import mergesort
+from .mergesort import mergesort
+
+
+def test_merge_sort_none():
+    """Test merge sort."""
+    assert mergesort([]) == []
 
 
 def test_merge_sort_one():
