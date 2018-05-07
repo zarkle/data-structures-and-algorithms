@@ -30,6 +30,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Repeated Word](./challenges/repeated_word)
     - [Tree Intersection](./challenges/tree_intersection)
     - [Left Join](./challenges/left_join)
+    - [Merge Sort](./challenges/mergesort)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
     - [Nth Fibonacci](./interviews/fibonacci-n)
