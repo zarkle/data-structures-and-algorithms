@@ -33,8 +33,8 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Sorting Algorithms](./sorting_algos/)
         - [Insertion Sort](./sorting_algos/insertion.py)
         - [Selection Sort](./sorting_algos/selection.py)
-        - [Merge Sort](./challenges/mergesort)
-        - [Quick Sort](./challenges/quicksort)
+        - [Merge Sort](./sorting_algos/mergesort)
+        - [Quick Sort](./sorting_algos/quicksort)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
     - [Nth Fibonacci](./interviews/fibonacci-n)

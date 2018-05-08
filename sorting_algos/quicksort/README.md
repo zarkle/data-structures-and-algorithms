@@ -7,4 +7,4 @@ Write a function that accepts an array of integers, and returns an array sorted 
 Write at least three test assertions for each method that you define.
 
 ## Solution
-![whiteboard](../../assets/quick_sort.jpg)
+![whiteboard](../../../assets/quick_sort.jpg)

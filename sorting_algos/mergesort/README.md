@@ -12,4 +12,4 @@ Input: `[34, 19, 42, -9, 2018, 0, 2005, 77, 2099]`
 Output: `[-9, 0, 19, 34, 42, 77, 2005, 2018, 2099]`
 
 ## Solution
-![whiteboard](../../assets/merge_sort.jpg)
+![whiteboard](../../../assets/merge_sort.jpg)
