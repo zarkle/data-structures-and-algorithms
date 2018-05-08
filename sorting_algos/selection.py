@@ -22,3 +22,13 @@ def selection_sort(lst):
 
     return result
 
+# a simpler solution
+# def selection_sort(lst):
+#     for i in range(len(lst)):
+#         current_smallest_index = i
+#         for j in range(i, len(lst)):
+#             if lst[j] < lst[current_smallest_index]:
+#                 current_smallest_index = j
+#         if current_smallest_index != i:
+#             lst[current_smallest_index], lst[i] = lst[i], lst[current_smallest_index]
+#     return lst
