@@ -1,25 +1,23 @@
-from random import randint
-
-
 def quick_sort(lst):
     """Implement quick sort algorithm."""
-    def partition(lst):
-        if len(lst) < 2:
-            return lst
+    if len(lst) < 2:
+        return lst
 
-        lst = list(lst)
+    lst = list(lst)
 
-        left, right = [], []
-        pivot_index = randint(0, len(lst) - 1)
-        for each in lst:
-            if each < lst[pivot_index]:
-                left.append(each)
-            else:
-                right.append(each)
+    left, right, equal = [], [], []
 
-        left = partition(left)
-        right = partition(right)
+    pivot = lst[0]
+    for i in range(len(lst)):
+        if lst[i] < pivot:
+            left.append(lst[i])
+        elif lst[i] > pivot:
+            right.append(lst[i])
+        else:
+            equal.append(lst[i])
 
-        return left + [lst[pivot_index]] + right
+    # list comprehension shortcut:
+    # left = [i for i in lst if i <= pivot]
+    # right = [i for i in lst if i > pivot]
 
-    return partition(lst)
+    return quick_sort(left) + equal + quick_sort(right)
