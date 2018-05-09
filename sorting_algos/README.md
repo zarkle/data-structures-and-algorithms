@@ -1,8 +1,8 @@
-# NAME
-CF 401 Data Structures Whiteboard Challenge
+# Sorting Algorithms
 
 ## Challenge
-
-
-## Solution
-![whiteboard](../../assets/name.jpg)
+- Insertion Sort
+- Selection Sort
+- Merge Sort
+- Quick Sort
+- Radix Sort
