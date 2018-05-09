@@ -1,6 +1,8 @@
 def mergesort(lst):
+    """Perform merge sort algorithm."""
 
     def divide(lst):
+        """Divide."""
         if len(lst) <= 1:
             return lst
 
@@ -13,6 +15,7 @@ def mergesort(lst):
         return merge(left, right)
 
     def merge(left, right):
+        """Conquer."""
         result = []
         while len(left) > 0 and len(right) > 0:
             if left[0] <= right[0]:
