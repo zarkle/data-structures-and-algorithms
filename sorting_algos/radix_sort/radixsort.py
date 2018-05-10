@@ -8,11 +8,11 @@ def radix_sort(lst):
         buckets = [[] for x in range(10)]
         for number in lst:
             digit = (number // (10 ** iteration)) % 10
-            # import pdb; pdb.set_trace()
             buckets[digit].append(number)
         return buckets
 
     def empty_buckets(buckets):
+        """Conquer."""
         lst = []
         for bucket in buckets:
             for number in bucket:
