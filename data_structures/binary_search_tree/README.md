@@ -13,8 +13,15 @@ Create a Class for a BST, which is aware of the root of the tree as root
 Ensure that your class and any subsequent methods are properly tested, and that your test coverage is above 80%.
 
 
-### Whiteboard Challenge - Breadth-first Traversal
+### Whiteboard Challenge - Breadth-First Traversal
 
 Write a function called breadthFirstTraversal which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
 
 ![whiteboard](../../assets/breadth-first-traversal.jpg)
+
+
+### Whiteboard Challenge - Find the Maximum Value in a Binary Tree
+
+Write a function called find-maximum-value which takes binary tree as its only imput. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+![whiteboard](../../assets/find_maximum_value_binary_tree.jpg)
