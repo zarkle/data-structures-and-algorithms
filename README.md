@@ -22,7 +22,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [FIFO Animal Shelter](./challenges/fifo-animal-shelter)
     - [Multi-Bracket Validation](./challenges/multi_bracket_validation)
     - [Towers of Hanoi](./challenges/towers_of_hanoi)
-    - [Fizz Buzz Tree](./challenges/fizzbuzz-tree)
+    - [Fizz Buzz Tree](./data_structures/binary_search_tree/fizzbuzztree.py)
     - [Breadth-first Traversal](./data_structures/binary_search_tree/breadth_first_traversal.py)
     - [Find the Maximum Value in a Binary Tree](./data_structures/binary_search_tree/find_maximum_value_binary_tree.py)
     - [Print Level Order of K-ary Tree](./challenges/print-level-order)
