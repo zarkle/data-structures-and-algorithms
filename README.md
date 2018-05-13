@@ -28,7 +28,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Print Level Order of K-ary Tree](./data_structures/k_tree/print_level_order.py)
     - [Find Matches in K-ary Tree](./data_structures/k_tree/find_matches.py)
     - [Repeated Word](./data_structures/hash_table/repeated_word.py)
-    - [Tree Intersection](./challenges/tree_intersection)
+    - [Tree Intersection](./data_structures/binary_search_tree/tree_intersection.py)
     - [Left Join](./challenges/left_join)
     - [Sorting Algorithms](./sorting_algos/)
         - [Insertion Sort](./sorting_algos/insertion.py)

@@ -33,3 +33,11 @@ Write a function called breadthFirstTraversal which takes a Binary Tree as its u
 Write a function called find-maximum-value which takes binary tree as its only imput. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
 ![whiteboard](../../assets/find_maximum_value_binary_tree.jpg)
+
+
+### Whiteboard Challenge - Find common values in 2 binary trees
+- Write a function called tree_intersection that takes two binary tree parameters.
+- Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.
+- Write at least three test assertions for each method that you define.
+
+![whiteboard](../../assets/tree_intersection.jpg)
