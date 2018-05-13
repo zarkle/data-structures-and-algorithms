@@ -1,6 +1,6 @@
 # Sorting Algorithms
 
-## Challenge
+## Challenges
 - Insertion Sort
 - Selection Sort
 - Merge Sort
