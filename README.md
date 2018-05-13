@@ -25,7 +25,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Fizz Buzz Tree](./data_structures/binary_search_tree/fizzbuzztree.py)
     - [Breadth-first Traversal](./data_structures/binary_search_tree/breadth_first_traversal.py)
     - [Find the Maximum Value in a Binary Tree](./data_structures/binary_search_tree/find_maximum_value_binary_tree.py)
-    - [Print Level Order of K-ary Tree](./challenges/print-level-order)
+    - [Print Level Order of K-ary Tree](./data_structures/k_tree/print_level_order.py)
     - [Find Matches in K-ary Tree](./challenges/find_matches)
     - [Repeated Word](./challenges/repeated_word)
     - [Tree Intersection](./challenges/tree_intersection)

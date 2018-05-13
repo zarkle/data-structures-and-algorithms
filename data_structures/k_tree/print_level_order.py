@@ -1,9 +1,11 @@
-from queue import Queue
+"""Level-order printout of a k-ary tree."""
+from ..queue.queue import Queue
 
 
 def print_level_order(tree):
     """
-    print level order of K-ary tree
+    Print level order of K-ary tree.
+
     - input: k-ary tree
     - output: return a string that contains a listing of all values in the tree, with new lines in-between each level of the tree
     """
