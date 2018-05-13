@@ -1,4 +1,5 @@
-from .queue import Queue
+"""Find all matching values in a k-ary tree."""
+from ..queue.queue import Queue
 
 
 def find_matches(tree, value=None):

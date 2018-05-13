@@ -39,3 +39,15 @@ def tree():
     tree.insert(4, 1)
     tree.insert(5, 1)
     return tree
+
+
+@pytest.fixture
+def large_tree_match():
+    tree = KT()
+    tree.insert(10, None)
+    tree.insert(2, 10)
+    tree.insert(2, 10)
+    tree.insert(3, 2)
+    tree.insert(12, 3)
+    tree.insert(13, 3)
+    return tree

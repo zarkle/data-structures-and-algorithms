@@ -1,9 +1,7 @@
-"""Code hash table."""
-# from functools import reduce
 from .linked_list import LinkedList as LL
 
 
-class HashTable:
+class HashTable:  # pragma: no cover
     """Hash table class."""
 
     def __init__(self, max_size=1024):
@@ -26,33 +24,28 @@ class HashTable:
             sum += ord(char)
         return sum % len(self.buckets)
 
-        # to use reduce function:
-        # return reduce(lambda a, b: a + ord(b), list(key), 0) % self.buckets
-
     def set(self, key, val):
-        """Set function. If duplicate key, will add another value."""
+        """Set function."""
         self.buckets[self._hash_key(key)].append({key: val})
 
     def get(self, key):
-        """Get function.  Returns all the values for a given key."""
-        result = []
+        """Get function."""
         current = self.buckets[self._hash_key(key)].head
         while current:
             if key in current.val.keys():
-                result.append(current.val[key])
+                return current.val[key]
             current = current._next
-        return result
 
-    def remove(self, key):
-        """Remove function."""
-        ll = self.buckets[self._hash_key(key)]
-        if key in ll.head.val.keys():
-            ll.head = ll.head._next
-            return
 
-        current = ll.head
-        while current:
-            if key in current._next.val.keys():
-                current._next = current.val[key]._next
-                return
-            current = current._next
+def repeated_word(long_string):
+    """Imperative function that accepts a lengthy string parameter (which contains no punctation) and return the first word to occur sequentially more than once in that provided string."""
+    if type(long_string) is not str:
+        raise TypeError('Input must be string.')
+
+    individuals = HashTable()
+    words = long_string.lower().split(' ')
+    for word in words:
+        if individuals.get(word) is None:
+            individuals.set(word, word)
+        else:
+            return word

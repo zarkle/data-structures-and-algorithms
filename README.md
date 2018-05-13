@@ -1,9 +1,5 @@
 # Data Structure & Algorithms
-A repository for all things data structures and algorithms!
-
-## Installation
-Follows a standard GitHub workflow for cloning and requiring implementations using Python.
-Clone the repo to your machine. Begin a new virtual environment with Python 3 and activate it.
+A repository for all things data structures and algorithms! This repo contains all the data structures and whiteboard challenges done in the CF 401 Python course.
 
 ## Table of Contents
 1. Data Structures
@@ -22,17 +18,17 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [FIFO Animal Shelter](./challenges/fifo-animal-shelter)
     - [Multi-Bracket Validation](./challenges/multi_bracket_validation)
     - [Towers of Hanoi](./challenges/towers_of_hanoi)
-    - [Fizz Buzz Tree](./challenges/fizzbuzz-tree)
-    - [Breadth-first Traversal](./challenges/breadth-first-traversal)
-    - [Find the Maximum Value in a Binary Tree](./challenges/find-maximum-value-binary-tree)
-    - [Print Level Order of K-ary Tree](./challenges/print-level-order)
-    - [Find Matches in K-ary Tree](./challenges/find_matches)
-    - [Repeated Word](./challenges/repeated_word)
-    - [Tree Intersection](./challenges/tree_intersection)
-    - [Left Join](./challenges/left_join)
+    - [Fizz Buzz Tree (BST)](./data_structures/binary_search_tree/fizzbuzztree.py)
+    - [Breadth-first Traversal (BST)](./data_structures/binary_search_tree/breadth_first_traversal.py)
+    - [Find the Maximum Value in a Binary Tree](./data_structures/binary_search_tree/find_maximum_value_binary_tree.py)
+    - [Print Level Order of K-ary Tree](./data_structures/k_tree/print_level_order.py)
+    - [Find Matches in K-ary Tree](./data_structures/k_tree/find_matches.py)
+    - [Repeated Word (Hash Table)](./data_structures/hash_table/repeated_word.py)
+    - [Tree Intersection (BST)](./data_structures/binary_search_tree/tree_intersection.py)
+    - [Left Join (Hash Table)](./data_structures/hash_table/left_join.py)
     - [Sorting Algorithms](./sorting_algos/)
-        - [Insertion Sort](./sorting_algos/insertion.py)
-        - [Selection Sort](./sorting_algos/selection.py)
+        - [Insertion Sort](./sorting_algos/insertion_sort)
+        - [Selection Sort](./sorting_algos/selection_sort)
         - [Merge Sort](./sorting_algos/mergesort)
         - [Quick Sort](./sorting_algos/quicksort)
         - [Radix Sort](./sorting_algos/radix_sort)

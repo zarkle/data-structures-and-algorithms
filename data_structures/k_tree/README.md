@@ -15,3 +15,25 @@
         - This class should be aware of a breadth-first traversal method
         - This class should have the ability to insert a new node into the tree at a given parent node
 - Ensure that your class and any subsequent methods are properly tested, and that your test coverage is above 80%.
+
+
+### Whiteboard Challenge - Print Level Order
+Write a function to generate a level-order printout of a k-ary tree. That is, given a tree, display the node values, with new lines between each level of the tree.
+
+Write a function based on the specifications above, which takes in a k-ary tree. Without utilizing any of the built-in methods available to your language, return a string that contains a listing of all values in the tree, with new lines in-between each level of the tree.
+
+Write at least three test assertions for each method that you define.Ensure your tests are passing before you submit your solution.
+
+![whiteboard](../../assets/print-level-order.jpg)
+
+
+### Whiteboard Challenge - Find Matches
+Find all matching values in a tree.
+
+- Write a function that takes a k-ary tree with non-unique values and a target value.
+- Return a collection of all the nodes from within the tree that match the provided value.
+- Avoid utilizing any of the built-in methods available to your language.
+
+Write at least three test assertions for each method that you define.
+
+![whiteboard](../../assets/find_matches.jpg)
