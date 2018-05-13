@@ -33,15 +33,15 @@ def test_find_match_single(small_tree):
         assert node.val == 1
 
 
-def test_find_match_two(large_tree):
+def test_find_match_two(large_tree_match):
     """Test find match function."""
-    tree = FM(large_tree, 2)
+    tree = FM(large_tree_match, 2)
     assert len(tree) == 2
     for node in tree:
         assert node.val == 2
 
 
-def test_find_match_none(large_tree):
+def test_find_match_none(large_tree_match):
     """Test find match function."""
-    tree = FM(large_tree, 9)
+    tree = FM(large_tree_match, 9)
     assert len(tree) == 0
