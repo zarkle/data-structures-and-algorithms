@@ -11,3 +11,10 @@ Create a Class for a BST, which is aware of the root of the tree as root
 - This class should have the ability to insert a new node into the tree. Your insertion should follow an O(log n) search solution to find the correct place for inserting the new node.
 
 Ensure that your class and any subsequent methods are properly tested, and that your test coverage is above 80%.
+
+
+### Whiteboard Challenge - Breadth-first Traversal
+
+Write a function called breadthFirstTraversal which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+
+![whiteboard](../../assets/breadth-first-traversal.jpg)

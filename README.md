@@ -23,7 +23,7 @@ Clone the repo to your machine. Begin a new virtual environment with Python 3 an
     - [Multi-Bracket Validation](./challenges/multi_bracket_validation)
     - [Towers of Hanoi](./challenges/towers_of_hanoi)
     - [Fizz Buzz Tree](./challenges/fizzbuzz-tree)
-    - [Breadth-first Traversal](./challenges/breadth-first-traversal)
+    - [Breadth-first Traversal](./data_structures/binary_search_tree/breadth_first_traversal.py)
     - [Find the Maximum Value in a Binary Tree](./challenges/find-maximum-value-binary-tree)
     - [Print Level Order of K-ary Tree](./challenges/print-level-order)
     - [Find Matches in K-ary Tree](./challenges/find_matches)

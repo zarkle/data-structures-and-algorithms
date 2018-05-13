@@ -1,4 +1,5 @@
-from breadth_first_traversal import breadth_first_traversal, BST
+from .breadth_first_traversal import breadth_first_traversal
+from .bst import BST
 
 
 def test_breadth_first_traversal():
