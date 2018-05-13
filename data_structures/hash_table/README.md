@@ -1,5 +1,5 @@
-## Data Structures
-### Hash Tables
+# Data Structures
+## Hash Tables
 - Create a HashTable class, which when instantiated is aware of the following attributes:
     - max_size: defaults to 1024
     - buckets: defaults to a Python list()
@@ -13,3 +13,11 @@
         - You are welcome to modify this removal method to include functionality for removing the complete list, but this is not required.
 
 Write at least three unit tests for each function that you define as part of this assignment.
+
+
+### Whiteboard Challenge - Find the first repeated word in a book
+- Write a function that accepts a lengthy string parameter.
+- Without utilizing any of the built-in library methods available to your language, return the first word to occur sequentially more than once in that provided string. Assume all words have no punctuation attached to them.
+- Write at least three test assertions for each method that you define.
+
+![whiteboard](../../assets/repeated_word.jpg)
