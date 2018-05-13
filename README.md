@@ -1,9 +1,5 @@
 # Data Structure & Algorithms
-A repository for all things data structures and algorithms!
-
-## Installation
-Follows a standard GitHub workflow for cloning and requiring implementations using Python.
-Clone the repo to your machine. Begin a new virtual environment with Python 3 and activate it.
+A repository for all things data structures and algorithms! This repo contains all the data structures and whiteboard challenges done in the CF 401 Python course.
 
 ## Table of Contents
 1. Data Structures
