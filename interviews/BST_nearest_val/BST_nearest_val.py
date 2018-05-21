@@ -11,6 +11,11 @@ def BST_nearest_val(data, val):
         if node.left is not None:
             _walk(node.left)
 
+        # this conditional is only needed if you wanted to return the larger of 2 equidistant data points
+        if abs(val - node.val) == nearest:
+            if node.val > hour:
+                hour = node.val
+
         if abs(val - node.val) < nearest:
             nearest = abs(val - node.val)
             hour = node.val

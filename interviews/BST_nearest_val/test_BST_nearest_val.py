@@ -5,7 +5,7 @@ from data_structures.binary_search_tree.bst import BST
 def test_BST_nearest_val_example_one():
     # data = BST([1, 3, 6, 4, 7, 8, 10, 14, 13])
     data = BST([8, 3, 1, 6, 4, 7, 10, 14, 13])
-    assert BNV(data, 9) == 8
+    assert BNV(data, 9) == 10
 
 
 def test_BST_nearest_val_example_two():
