@@ -26,12 +26,15 @@ def distinct_values_bt(bin_tree):
 
     # return list(distinct.keys())
 
-    # lesser of 2 evils
+    # lesser of 2 evils:
     for key in distinct:
         if distinct[key] == 1:
             result.append(key)
 
     return result
+
+    # or cut 5 lines of code into 1 using list comprehension:
+    # return [key for key, val in distinct.items() if val == 1]
 
     # Big O:
     # time: O(N)
