@@ -20,11 +20,19 @@ def distinct_values_bt(bin_tree):
 
     _walk(bin_tree.root)
 
+    # for key in list(distinct):
+    #     if distinct[key] != 1:
+    #         del distinct[key]
+
+    # return list(distinct.keys())
+
+    # lesser of 2 evils
     for key in distinct:
-        # if distinct[key] != 1:
-        #     del distinct[key]
         if distinct[key] == 1:
             result.append(key)
 
-    # return list(distinct.keys())
     return result
+
+    # Big O:
+    # time: O(N)
+    # space: O(2N) = O(N)
