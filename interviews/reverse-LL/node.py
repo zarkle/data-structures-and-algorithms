@@ -7,7 +7,7 @@ class Node:
         self._next = next
 
     def __repr__(self):
-        return '{val}'.format(val=self.val)
+        return f'{self.val}'
 
     def __str__(self):
-        return self.__repr__
+        return f'{self.val}'
