@@ -45,3 +45,7 @@ Write a function called find-maximum-value which takes binary tree as its only i
 
 ### Count Leaves
 Write a function to count the leaves in a binary tree.
+
+
+### Binary Search
+Write a function to perform a binary search on a binary search tree.

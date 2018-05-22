@@ -32,6 +32,7 @@ A repository for all things data structures and algorithms! This repo contains a
         - [Quick Sort](./sorting_algos/quicksort)
         - [Radix Sort](./sorting_algos/radix_sort)
     - [Count Leaves (BST)](./data_structures/binary_search_tree/bst_count_leaves.py)
+    - [Binary Search (BST)](./data_structures/binary_search_tree/bst_binary_search.py)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
     - [Nth Fibonacci](./interviews/fibonacci-n)
