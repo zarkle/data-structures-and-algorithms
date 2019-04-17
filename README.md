@@ -1,6 +1,8 @@
 # Data Structure & Algorithms
 A repository for all things data structures and algorithms! This repo contains all the data structures and whiteboard challenges done in the CF 401 Python course.
 
+Also check out my [code challenges repo](https://github.com/zarkle/code_challenges) for lots more!
+
 ## Table of Contents
 1. Data Structures
     - [Singly Linked List](./data_structures/linked-list)
