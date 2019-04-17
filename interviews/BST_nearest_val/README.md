@@ -40,3 +40,10 @@ Considering the following abstract input `1,3,6,4,7,8,10,14,13`
 
 ### Original Instructions
 https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-19/interview-01.html
+
+
+#### Final Whiteboard Prompt
+- You are on a development team who nedes to track the time it takes each developer to complete a task.
+- Identify a data structure that can be used to __store and search__ for these times efficiently.
+- Create an algorithm that will use your data structure and a provided time to determine which time in your data structure is nearest to the provided time.
+- Sample Data (in hours): 15, 20, 7, 9, 3, 32, 17

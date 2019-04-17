@@ -41,3 +41,11 @@ Write a function called find-maximum-value which takes binary tree as its only i
 - Write at least three test assertions for each method that you define.
 
 ![whiteboard](../../assets/tree_intersection.jpg)
+
+
+### Count Leaves
+Write a function to count the leaves in a binary tree.
+
+
+### Binary Search
+Write a function to perform a binary search on a binary search tree.

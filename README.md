@@ -26,7 +26,6 @@ Also check out my [code challenges repo](https://github.com/zarkle/code_challeng
     - [Print Level Order of K-ary Tree](./data_structures/k_tree/print_level_order.py)
     - [Find Matches in K-ary Tree](./data_structures/k_tree/find_matches.py)
     - [Repeated Word (Hash Table)](./data_structures/hash_table/repeated_word.py)
-    - [Tree Intersection (BST)](./data_structures/binary_search_tree/tree_intersection.py)
     - [Left Join (Hash Table)](./data_structures/hash_table/left_join.py)
     - [Sorting Algorithms](./sorting_algos/)
         - [Insertion Sort](./sorting_algos/insertion_sort)
@@ -34,6 +33,8 @@ Also check out my [code challenges repo](https://github.com/zarkle/code_challeng
         - [Merge Sort](./sorting_algos/mergesort)
         - [Quick Sort](./sorting_algos/quicksort)
         - [Radix Sort](./sorting_algos/radix_sort)
+    - [Count Leaves (BST)](./data_structures/binary_search_tree/bst_count_leaves.py)
+    - [Binary Search (BST)](./data_structures/binary_search_tree/bst_binary_search.py)
 3. Mock Whiteboard Interviews
     - [Rotate a Matrix](./interviews/matrix-rotate)
     - [Nth Fibonacci](./interviews/fibonacci-n)
