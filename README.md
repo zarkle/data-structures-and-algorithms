@@ -1,5 +1,5 @@
 # Data Structure & Algorithms
-A repository for all things data structures and algorithms! This repo contains all the data structures and whiteboard challenges done in the CF 401 Python course.
+<!-- A repository for all things data structures and algorithms! This repo contains all the data structures and whiteboard challenges done in the CF 401 Python course. -->
 
 Also check out my [code challenges repo](https://github.com/zarkle/code_challenges) for lots more!
 
@@ -11,6 +11,7 @@ Also check out my [code challenges repo](https://github.com/zarkle/code_challeng
     - [Binary Search Tree](./data_structures/binary_search_tree)
     - [K-ary Tree](./data_structures/k_tree)
     - [Hash Table](./data_structures/hash_table)
+    - [Heap](./data_structures/heap)
 2. Algorithms
     - [Reverse An Array](./challenges/reverse-an-array)
     - [Shift Array](./challenges/shift-array)
